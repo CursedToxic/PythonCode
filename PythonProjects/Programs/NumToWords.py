@@ -12,6 +12,7 @@ digitMapping = {
     "9": "NINE" 
 }
 
-output = ""
+output = "  "
 for ch in phone:
-    output += digitMapping.get(ch,"!")
+    output += digitMapping.get(ch," !")
+print(output)
