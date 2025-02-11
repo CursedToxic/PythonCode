@@ -15,4 +15,4 @@ digitMapping = {
 output = "  "
 for ch in phone:
     output += digitMapping.get(ch," !")
-print(output)
+print(output + " ")
