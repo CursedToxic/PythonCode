@@ -8,5 +8,5 @@ class Child2(Parents):
 
 child_1 = Child1
 child_2 = Child2
-child_1.walk()
-child_2.walk()
+child_1.walk(self=Parents)
+child_2.walk(self=Parents)

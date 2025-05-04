@@ -1,5 +1,5 @@
 def square(number):
-    print(number * number)
-    return number * number
+    squared = print(number * number)
+    return squared
 
 square(69)
