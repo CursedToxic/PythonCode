@@ -1,4 +1,4 @@
-from GameObjects import Player, Weapon, Enemy # MUST have this in the program
+from PythonBasics.OOP.Classes.GameObjects import Player, Weapon, Enemy # MUST have this in the program
 import random #For random damage and health
 # Create an instance of Player
 player_character = Player('Gimli', 'Dwarf', 'Fighter', 3, 180)
@@ -6,7 +6,7 @@ player_character = Player('Gimli', 'Dwarf', 'Fighter', 3, 180)
 # TODO: Create an instance of Weapon with random damage between 12 and 15
 weapon = Weapon("Ronen", "utility", random.randint(12,15))
 # TODO: Create an instance of Enemy with random damage between 15 and 18, and random health between 80 and 140
-enemy = Enemy("Chimpanzini Bananini", )
+enemy = Enemy("Levin", "Monster", random.randint(15,18), random.randint(80, 140))
 
 # Print the player character details
 print(f"Player Name: {player_character.name}")
@@ -16,6 +16,7 @@ print(f"Player Attack: {player_character.atk}")
 print(f"Player Health: {player_character.health}")
 
 # TODO: Print the player weapon details
-
+print(weapon.name, weapon.category, weapon.damage)
 
 # TODO: Print the enemy character details
+print(enemy)
